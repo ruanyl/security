@@ -103,8 +103,8 @@ public class Installer {
         gatherUserInputs();
         initializeVariables();
         printVariables();
-        securitySettingsConfigurer.configureSecuritySettings();
         certificateGenerator.createDemoCertificates();
+        securitySettingsConfigurer.configureSecuritySettings();
         finishScriptExecution();
     }
 
